@@ -1,0 +1,68 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.4.1deb2ubuntu2
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 16, 2018 at 10:04 AM
+-- Server version: 5.7.21-0ubuntu0.16.04.1
+-- PHP Version: 7.0.28-0ubuntu0.16.04.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `2015CSE039`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `sec` int(50) NOT NULL,
+  `TorF` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`username`, `password`, `sec`, `TorF`) VALUES
+('2015CSE039', '666666', 1, 0),
+('2015CSE116', '123456', 3, 0),
+('2015CSE065', 'mlp', 2, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vote`
+--
+
+CREATE TABLE `vote` (
+  `can_name` varchar(50) NOT NULL,
+  `can_vote` int(60) NOT NULL,
+  `id` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vote`
+--
+
+INSERT INTO `vote` (`can_name`, `can_vote`, `id`) VALUES
+('ABC', 2, '2015CSE039'),
+('PQR', 9, '2015CSE038'),
+('XYZ', 17, '2015CSE040');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
